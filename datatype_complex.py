@@ -16,8 +16,8 @@ print(a)
 print(b)
 print(c)
 
-# The real part of the complex number can be represented in the binary, octal and hexadecimal forms
-# whereas the imaginary part we should represent only in decimal form.
+# The real part of the complex number can be represented in the binary, octal and hexadecimal forms.
+# The imaginary part we should represent only in decimal form.
 d = 0b111+10j
 e = 0o12+20j
 f = 0xab+30j
