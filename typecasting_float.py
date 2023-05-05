@@ -4,6 +4,7 @@
 # Int to Float
 print(float(5))
 print(float(0B111))
+print(float(0O12))
 print(float(0X123))
 
 # Complex to Float
