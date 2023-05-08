@@ -1,5 +1,4 @@
 # To represent a group of objects as a single entity we have to go for Collection Data Types.
-# The Python has below collection data types.
 # List - It is a collection datatype in Python.
 
 # Characteristics of List

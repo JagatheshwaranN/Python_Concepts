@@ -1,5 +1,4 @@
 # To represent a group of objects as a single entity we have to go for Collection Data Types.
-# The Python has below collection data types.
 # Tuple - It is a collection datatype in Python.
 # Tuple is same as List with one exception as Tuple is immutable. Tuple is also known as read only version of List.
 
