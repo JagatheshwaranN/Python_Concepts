@@ -14,4 +14,4 @@ print(e is f)  # True ( Both variables using the same object only)
 
 g = 10+20j
 h = 10+20j
-print(g is h)
+print(g is h)  # True ( Both variables using the same object only)
