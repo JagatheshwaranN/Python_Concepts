@@ -37,7 +37,7 @@ print(setVal)
 
 # Set Duplicates
 setDT = {1, 1, 2, 3, 4, 5}
-print(setDT)  # {1, 2, 3, 4, 5} - Set Datatype won't accept the duplicate objects.
+print(setDT)  # {1, 2, 3, 4, 5} - Set datatype won't accept the duplicate objects.
 
 # Set Points to Remember
 setVlDT = {}

@@ -13,6 +13,7 @@
 listVal = [1, 2, 3, 4, 5]
 print(listVal)
 print(id(listVal))
+print(type(listVal))
 
 # List Value Replace with Heterogeneous Object
 listVal[1] = 'a'

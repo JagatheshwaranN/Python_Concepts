@@ -14,6 +14,7 @@
 tupVal = (1, 2, 3, 4, 5, 'a')
 print(tupVal)
 print(id(tupVal))
+print(type(tupVal))
 
 # Tuple Value Replace with Heterogeneous Object - Not Allowed
 # tupVal[1] = 'b'  # TypeError: 'tuple' object does not support item assignment
@@ -40,8 +41,3 @@ print(type(tupleDT))  # <class 'int'>
 tupleDT = (10,)
 print(tupleDT)
 print(type(tupleDT))
-
-
-
-
-
