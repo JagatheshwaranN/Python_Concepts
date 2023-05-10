@@ -1,10 +1,10 @@
 # To represent a group of objects as a single entity we have to go for Collection Data Types.
-# When we have requirements to display group of values as single entity where duplicates not allowed.
+# When we have requirements to display a group of values as single entity where duplicates not allowed.
 # And order is not important, then we can use Set.
 # Set - It is a collection datatype in Python.
 
 # Characteristics of Set
-# 1.	Duplicated not allowed.
+# 1.	Duplicates not allowed.
 # 2.	Order is not preserved.
 # 3. 	Indexing / Slicing not applicable as order is not preserved.
 # 4.	Heterogeneous objects allowed.
