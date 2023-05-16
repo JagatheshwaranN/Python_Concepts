@@ -61,3 +61,4 @@ print(j[0].upper()+j[1:len(j)-1]+j[-1].upper())
 # It must take one variable as String and another variable as int.
 k = 'python'*3
 print(k)
+

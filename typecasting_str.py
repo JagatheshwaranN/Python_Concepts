@@ -25,3 +25,7 @@ print(ord('A'))
 # Char to Int
 print(chr(65))
 
+# Int to Str
+print(str(123))
+print(type(str(123)))
+
