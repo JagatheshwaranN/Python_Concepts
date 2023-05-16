@@ -49,3 +49,5 @@ print(type(setVlDT))  # <class 'dict'>
 setVlDT = set()
 print(type(setVlDT))  # <class 'set'>
 
+# Str to Set
+print(set('python'))

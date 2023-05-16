@@ -41,3 +41,6 @@ print(type(tupleDT))  # <class 'int'>
 tupleDT = (10,)
 print(tupleDT)
 print(type(tupleDT))
+
+# Str to Tuple
+print(tuple('python'))

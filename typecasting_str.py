@@ -19,3 +19,9 @@ print(str(1.5+2j))
 print(str(True))
 print(str(False))
 
+# ASCII
+print(ord('A'))
+
+# Char to Int
+print(chr(65))
+

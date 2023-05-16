@@ -16,6 +16,14 @@ print(int(False))
 # Str to Int
 # String internally contains only integral values and which is of base 10.
 print(int('5'))
+print(int('1100'))  # This code will print 1100
+print(int('1100', 2))  # This code tells the given value of base 2
 # print(int('10.5'))  # Value Error
 # print(int('0B111'))  # Value Error
+
+# Int to HexaDecimal
+print(hex(15))
+
+# Int to Oct
+print(oct(15))
 

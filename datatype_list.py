@@ -37,3 +37,6 @@ print(listVal[1:4])
 # List Duplicate
 listVal.append(4)
 print(listVal)
+
+# Str to List
+print(list('python'))
