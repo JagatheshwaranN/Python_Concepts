@@ -39,3 +39,20 @@ def out_function():
 
 out_function()
 print(var)  # 100 - Global var
+
+# Variable Assignment
+name, city = 'John', 'Seattle'
+print(name)
+print(city)
+
+city1 = city2 = city3 = 'Los Angeles'
+print(city1)
+print(city2)
+print(city3)
+
+icecream = ['vanilla', 'strawberry', 'mango', 'chocolate']
+a, b, c, d = icecream
+print(a)
+print(b)
+print(c)
+print(d)
