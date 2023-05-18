@@ -26,14 +26,14 @@ _city = "Chennai"
 # 3.	We can use the Global variable inside the function.
 # 4.    If needed we can update the Global variable value inside the function.
 
-var = 100
+var = 100  # Global variable
 
 
 def out_function():
     # global var
     # When we use Global var inside function.
     # Then its value will be updated as per var value inside the function
-    var = 50
+    var = 50  # Local variable
     print(var)  # 50 - Local var
 
 
