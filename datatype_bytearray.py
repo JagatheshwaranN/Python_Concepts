@@ -50,3 +50,7 @@ b2.insert(2, 70)
 for x2 in b2:
     print(x2)
 
+# =====================
+# MemoryView
+mv = memoryview(b)
+print(type(mv))

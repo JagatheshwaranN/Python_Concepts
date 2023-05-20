@@ -25,3 +25,7 @@ print(b[-1])
 b1 = b[1:3]
 for x1 in b1:
     print(x1)
+
+# Bytes Representation
+b2 = b'abc'
+print(type(b2))
