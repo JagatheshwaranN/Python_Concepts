@@ -48,18 +48,61 @@ print((h[1:]))
 print(h[:])
 print(h[1:10])  # It will consider only the available values in the given range of index
 print(h[3:1])  # Returns empty string
+print(h[-1:-3])
 
 # + Operator
 # + Operator applicable for the String and if we want to apply the + operator then both variables must be strings.
 i = 'python'
-print(i[0].upper()+i[1:])
+print(i[0].upper() + i[1:])
 j = 'abcde'
-print(j[0].upper()+j[1:len(j)-1]+j[-1].upper())
+print(j[0].upper() + j[1:len(j) - 1] + j[-1].upper())
 
 # * Operator
 # * operator is allowed in Python,and it is called as repetition operator.
 # It must take one variable as String and another variable as int.
-k = 'python'*3
+k = 'python' * 3
 print(k)
 
+# String Iterate using For loop
+s1 = 'python'
 
+for v in s1:
+    print(v)
+
+# String length
+print(len(s1))
+
+# String presence check in sentence
+s2 = """I like "clever" persons who is 'honest' in all actions"""
+print('persons' in s2)
+
+# String UpperCase
+s3 = 'python'.upper()
+print(s3)
+
+# String LowerCase
+s4 = 'PYTHON'.lower()
+print(s4)
+
+# String Strip
+s5 = ' Hello world '
+print(s5.strip())
+
+# String Replace
+s6 = 'Happy growing'
+print(s6.replace('growing', 'learning'))
+
+# String Split
+s7 = 'Hello, World'
+print(s7.split(","))
+
+# String format
+s8 = 'John'
+text = 'Hi {}, welcome!'
+text = text.format(s8)
+print(text)
+
+s9 = int('200000')
+text = 'Hi {}, your salary is {:.2f}'
+text = text.format(s8, s9)
+print(text)
