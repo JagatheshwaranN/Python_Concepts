@@ -15,6 +15,12 @@ def verify(index):
 
 num_lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+result = linear_search(num_lst, -1)
+verify(result)
+
+result = linear_search(num_lst, 0)
+verify(result)
+
 result = linear_search(num_lst, 12)
 verify(result)
 
