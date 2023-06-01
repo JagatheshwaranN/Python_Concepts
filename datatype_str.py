@@ -98,11 +98,24 @@ print(s7.split(","))
 
 # String format
 s8 = 'John'
-text = 'Hi {}, welcome!'
-text = text.format(s8)
-print(text)
+text1 = 'Hi {}, welcome!'
+text1 = text1.format(s8)
+print(text1)
 
 s9 = int('200000')
-text = 'Hi {}, your salary is {:.2f}'
-text = text.format(s8, s9)
-print(text)
+text2 = 'Hi {}, your salary is {:.2f}'
+text2 = text2.format(s8, s9)
+print(text2)
+
+text3 = 'Hi {0}, your salary is {1}'
+text3 = text3.format(s8, s9)
+print(text3)
+
+text4 = 'Hi {0}, my brother name is also {0}'
+text4 = text4.format(s8)
+print(text4)
+
+text5 = 'Hi {name}, your salary is {salary}'
+text5 = text5.format(salary=s9, name=s8)
+print(text5)
+

@@ -40,3 +40,14 @@ print(listVal)
 
 # Str to List
 print(list('python'))
+
+# List Size
+print(len(listVal))
+
+# List with mixed Data types
+person_lst = ['john', 20, 200000.00, True]
+print(person_lst)
+
+# List Creation with Constructor
+fruits = list(('apple', 'orange', 'mango'))
+print(fruits)
