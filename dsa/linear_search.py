@@ -27,3 +27,8 @@ verify(result)
 
 result = linear_search(num_lst, 70)
 verify(result)
+
+num_lst1 = []
+
+result = linear_search(num_lst1, 70)
+verify(result)

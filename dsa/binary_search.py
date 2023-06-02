@@ -41,3 +41,7 @@ verify(result)
 
 result = binary_search(num_lst, 40)
 verify(result)
+
+num_lst1 = []
+result = binary_search(num_lst1, 40)
+verify(result)
