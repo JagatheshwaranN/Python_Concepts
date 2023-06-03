@@ -40,3 +40,15 @@ print("============================================")
 # For Loop with no code block
 for i in [1, 2, 3, 4, 5]:
     pass
+
+print("============================================")
+
+# For Loop Iteration with len function
+days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+for d in range(len(days)):
+    print(days[d])
+
+print("============================================")
+
+# For Loop Iteration with List Comprehension
+[print(d) for d in days]

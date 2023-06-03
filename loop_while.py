@@ -27,3 +27,14 @@ while k <= 5:
     if k == 3:
         continue
     print(k)
+
+print("=================================")
+
+# While Loop Iteration with len function
+days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+
+i = 0
+while i < len(days):
+    print(i)
+    print(days[i])
+    i = i + 1
