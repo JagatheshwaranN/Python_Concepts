@@ -121,3 +121,26 @@ print(lst4)
 lst5 = ['A', 'B', 'C', 'D', 'E']
 lst5.clear()
 print(lst5)
+
+# List Comprehension
+fruits = ['Apple', 'Mango', 'Grapes', 'Kiwi', 'Orange']
+
+# Generate SubList without using List Comprehension
+new_fruits = []
+for f in fruits:
+    if 'a' in f:
+        new_fruits.append(f)
+
+print(new_fruits)
+
+# Generate SubList using List Comprehension
+new_fruits = [f for f in fruits if 'a' in f]
+print(new_fruits)
+
+# List Comprehension with Range function
+lst6 = [f for f in range(10)]
+print(lst6)
+
+# List Comprehension to update all list element as same value
+new_fruits = ['fruits' for f in fruits if 'a' in f]
+print(new_fruits)
