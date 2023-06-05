@@ -144,3 +144,56 @@ print(lst6)
 # List Comprehension to update all list element as same value
 new_fruits = ['fruits' for f in fruits if 'a' in f]
 print(new_fruits)
+
+# List Sorting
+fruits = ['Apple', 'Mango', 'Grapes', 'Kiwi', 'Orange']
+
+# Ascending Order
+fruits.sort()
+print(fruits)
+
+# Descending Order
+fruits.sort(reverse=True)
+print(fruits)
+
+# Case Insensitive Sort
+fruits_ext = ['Apple', 'Mango', 'Grapes', 'Kiwi', 'Orange', 'banana', 'guava']
+
+fruits_ext.sort()
+print(fruits_ext)
+
+fruits_ext.sort(key=str.lower)
+print(fruits_ext)
+
+numbers = [20, 10, 50, 40, 30, 70, 60]
+
+numbers.sort()
+print(numbers)
+
+numbers.sort(reverse=True)
+print(numbers)
+
+
+def my_logic(num):
+    return abs(num - 100)
+
+
+numbers.sort(key=my_logic)
+print(numbers)
+
+# List Reverse
+fruits_ext = ['Apple', 'Mango', 'Grapes', 'Kiwi', 'Orange', 'banana', 'guava']
+fruits_ext.reverse()
+print(fruits_ext)
+
+# List Copy
+lst7 = ['sa', 're', 'ga', 'ma']
+lst8 = lst7.copy()
+print(lst8)
+
+# List Join / Concatenation
+lst9 = [1, 2, 3, 4, 5]
+lst10 = [6, 7, 8]
+lst11 = lst9 + lst10
+print(lst11)
+
