@@ -44,3 +44,79 @@ print(type(tupleDT))
 
 # Str to Tuple
 print(tuple('python'))
+
+# Verify Tuple Element Present
+fruits = ('apple', 'banana', 'mango', 'grapes')
+if 'mango' in fruits:
+    print('Yes, mango available in the fruits tuple')
+
+# Tuple - Update Item - Tuple to List Conversion
+# By default, we can't update the tuple element as it's immutable in nature. But, we have a workaround
+# to convert the tuple to list and update the same and then convert it back to tuple using constructor.
+
+fruits = ('apple', 'banana', 'mango', 'grapes')
+print(fruits)
+lst = list(fruits)
+lst[1] = 'berry'
+fruits = tuple(lst)
+print(fruits)
+
+# Tuple - Add Item
+fruits = ('apple', 'banana', 'mango', 'grapes')
+print(fruits)
+lst = list(fruits)
+lst.append('pineapple')
+fruits = tuple(lst)
+print(fruits)
+
+# Tuple - Remove Item
+fruits = ('apple', 'banana', 'mango', 'grapes')
+print(fruits)
+lst = list(fruits)
+lst.remove('grapes')
+fruits = tuple(lst)
+print(fruits)
+
+# Pack and Unpack Tuples
+
+# When we create tuple, we used to add some items into the tuple and assign it to some variable.
+# This process is called as Packing a tuple.
+fruits = ('apple', 'banana')  # Tuple Packing
+
+# Collecting the tuple elements in a variable is called as Tuple Unpacking.
+f1, f2 = fruits
+print(f1)
+print(f2)
+
+# In case, if we don't know the variable size to hold the tuple values, we can use * with last variable, and it
+# will take remaining values of tuple as list into the last variable.
+fruits = ('apple', 'banana', 'mango', 'grapes')
+f1, f2, *f3 = fruits
+print(f1)
+print(f2)
+print(f3)
+
+# Iterate through Tuple
+
+fruits = ('apple', 'banana', 'mango', 'grapes')
+
+# Approach 1
+for item in fruits:
+    print(item)
+
+print("=======================================")
+
+# Approach 2
+for index in range(len(fruits)):
+    print(fruits[index])
+
+print("=======================================")
+
+# Approach 3
+i = 0
+while i < len(fruits):
+    print(fruits[i])
+    i += 1
+
+
+
