@@ -51,3 +51,52 @@ print(type(setVlDT))  # <class 'set'>
 
 # Str to Set
 print(set('python'))
+
+# Heterogeneous Set
+s1 = {1, 'set', True}
+print(s1)
+
+# Set Creation using Constructor
+t1 = ('apple', 'orange', 'mango', 'grapes')
+s2 = set(t1)
+print(s2)
+
+# Iterate through Set
+s3 = {'apple', 'orange', 'mango', 'grapes'}
+for item in s3:
+    print(item)
+
+# Check Element present in Set
+s4 = {'apple', 'orange', 'mango', 'grapes'}
+if 'mango' in s4:
+    print('Yes, mango present in the set s4')
+
+# Add Item to Set
+fruits = {'apple', 'orange'}
+print(fruits)
+
+fruits.add('mango')
+print(fruits)
+
+# Update Item to Set
+fruits2 = {'berry', 'banana'}
+fruits.update(fruits2)
+print(fruits)
+
+# Remove Item from Set
+fruits.remove('banana')
+print(fruits)
+
+# Remove Item from Set using Discard
+fruits.discard('berry')
+print(fruits)
+
+# Remove Item from Set using Pop
+item = fruits.pop()
+print(item)
+print(fruits)
+
+# Remove all elements from Set
+fruits.clear()
+
+

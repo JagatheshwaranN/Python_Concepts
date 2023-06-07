@@ -118,5 +118,21 @@ while i < len(fruits):
     print(fruits[i])
     i += 1
 
+# Join Two Tuples
+t1 = (1, 2, 3, 4, 5)
+t2 = (6, 7, 8)
+t3 = t1 + t2
+print(t3)
 
+# Multiply Tuple
+t4 = ('SA', 'RE', 'GA', 'MA') * 2
+print(t4)
+
+# Count number of occurrence of Element in a Tuple
+t5 = (1, 2, 3, 1, 2, 1, 3, 4, 5, 6, 7, 8)
+print(t5.count(2))
+
+# Find first occurrence of an element in a Tuple
+t6 = (1, 2, 3, 1, 2, 1, 3, 4, 5, 6, 4, 7, 8)
+print(t5.index(4))
 
