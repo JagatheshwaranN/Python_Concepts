@@ -129,7 +129,7 @@ t4 = ('SA', 'RE', 'GA', 'MA') * 2
 print(t4)
 
 # Count number of occurrence of Element in a Tuple
-t5 = (1, 2, 3, 1, 2, 1, 3, 4, 5, 6, 7, 8)
+t5 = (1, 2, 3, 1, 2, 1, 3, 4, 2, 5, 6, 7, 8)
 print(t5.count(2))
 
 # Find first occurrence of an element in a Tuple

@@ -99,4 +99,110 @@ print(fruits)
 # Remove all elements from Set
 fruits.clear()
 
+# Set - Union
+s1 = {10, 30, 40, 100, 50, 70}
+s2 = {20, 40, 50, 70, 90, 80}
+s3 = s1.union(s2)
+print(s3)
+
+print("====================================")
+
+# Set - Update
+s4 = {10, 30, 40, 100, 50, 70}
+s5 = {20, 40, 50, 70, 90, 80}
+s4.update(s5)
+
+print(s4)
+print(s5)
+
+print("====================================")
+
+# Set - Intersection
+s1 = {10, 30, 40, 100, 50, 70}
+s2 = {20, 40, 50, 70, 90, 80}
+s6 = s1.intersection(s2)
+
+print(s6)
+
+print("====================================")
+
+# Set - Intersection Update
+s4 = {10, 30, 40, 100, 50, 70}
+s5 = {20, 40, 50, 70, 90, 80}
+s4.intersection_update(s5)
+
+print(s4)
+print(s5)
+
+print("====================================")
+
+# Set - Symmetric Difference
+s1 = {10, 30, 40, 100, 50, 70}
+s2 = {20, 40, 50, 70, 90, 80}
+s7 = s1.symmetric_difference(s2)
+
+print(s7)
+
+print("====================================")
+
+# Set - Symmetric Difference Update
+s4 = {10, 30, 40, 100, 50, 70}
+s5 = {20, 40, 50, 70, 90, 80}
+
+s4.symmetric_difference_update(s5)
+print(s4)
+print(s5)
+
+print("====================================")
+
+# Set - Copy
+s1 = {10, 30, 40, 100, 50, 70}
+s2 = s1.copy()
+
+print(s1)
+print(s2)
+
+print("====================================")
+
+# Set - Difference
+s4 = {10, 30, 40, 100, 50, 70}
+s5 = {20, 40, 50, 70, 90, 80}
+
+s8 = s4.difference(s5)
+print(s8)
+
+print("====================================")
+
+# Set - Difference Update
+s4 = {10, 30, 40, 100, 50, 70}
+s5 = {20, 40, 50, 70, 90, 80}
+
+s4.difference_update(s5)
+print(s4)
+print(s5)
+
+print("====================================")
+
+# Set - Disjoint
+s9 = {1, 2, 3, 4, 5}
+s10 = {6, 7, 8, 9, 10}
+s11 = {1, 2, 3, 4, 5}
+
+print(s9.isdisjoint(s10))
+print(s9.isdisjoint(s11))
+
+print("====================================")
+
+# Set - Subset
+s12 = {1, 2, 3, 4, 5}
+s13 = {1, 2}
+
+print(s12.issuperset(s13))
+print(s13.issubset(s12))
+
+
+
+
+
+
 
