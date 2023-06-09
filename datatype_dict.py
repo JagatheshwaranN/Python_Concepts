@@ -41,8 +41,46 @@ print(dictVal.get(101))
 d = dictVal.copy()
 print(d)
 
+dct = dict(dictVal)
+print(dct)
+
 # Dict Clear
 print(d.clear())
 
 # Dict Items
 print(dictVal.items())
+
+# Dict - Update
+dictVal.update({103: 'Jenni'})
+print(dictVal)
+
+dictVal.update({102: 'Blake'})
+print(dictVal)
+
+# Dict - Add
+dictVal[104] = 'Erica'
+print(dictVal)
+
+# Dict - remove using PopItem
+dictVal.popitem()
+print(dictVal)
+
+# Dict - Delete the item from the Dictionary
+del dictVal[103]
+print(dictVal)
+
+# del dictVal
+
+# Iterate through Dict
+for key in dictVal.keys():
+    print(key)
+
+for key in dictVal.keys():
+    print(dictVal[key])
+
+for value in dictVal.values():
+    print(value)
+
+# Dict - To print the Dict items using for loop
+for key, value in dictVal.items():
+    print(key, value)
