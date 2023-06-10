@@ -84,3 +84,29 @@ for value in dictVal.values():
 # Dict - To print the Dict items using for loop
 for key, value in dictVal.items():
     print(key, value)
+
+# Nested Dict
+
+# Creation Approach 1
+employees1 = {
+    'emp1': {
+        'name': 'john',
+    },
+    'emp2': {
+        'name': 'alex'
+    }
+}
+print(employees1)
+
+# Creation Approach 2
+emp3 = {'name': 'jenni'}
+emp4 = {'name': 'erica'}
+employees2 = {
+    'emp3': emp3,
+    'emp4': emp4
+}
+print(employees2)
+
+# To Iterate the Nested Dict
+for key, value in employees2.items():
+    print(key, ' : ', value)

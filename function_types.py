@@ -20,6 +20,8 @@ func_wt_args('John', 29)
 
 
 # Function Arbitrary Arguments.
+# *args - It is known as variable length argument in Python. It is used to take more than one value or no value at all.
+# *args - It should be the last argument to the method.
 def func_wt_arb_args(*fruits):
     for fruit in fruits:
         print(fruit)
@@ -39,6 +41,9 @@ func_wt_keyword_args(age='27', name='Alex')
 
 
 # Function Arbitrary Keyword Arguments.
+# **kwargs - It is known as variable length keyword argument in Python. It is used to take more than one value
+# or no value at all. This argument holds key value pairs.
+# **kwargs - It should be the last argument to the method.
 def func_wt_abr_key_args(**dataset):
     for data in dataset:
         print(data, dataset[data])
