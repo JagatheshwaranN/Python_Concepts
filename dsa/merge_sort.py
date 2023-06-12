@@ -6,6 +6,9 @@ def merge_sort(lst):
     Divide: Find the midpoint of the list and divide into sub-lists
     Conquer: Recursively sort the sub-lists created in the previous step
     Combine: Merge the sorted sub-lists created in previous step
+
+    Takes O(n log n) time.
+    With list slice operation, Takes O(kn log n) time.
     """
     if len(lst) <= 1:
         return lst
@@ -19,8 +22,10 @@ def merge_sort(lst):
 
 def split(lst):
     """
-    Divide the unsorted list at midpoint into sub-lists
-    Returns two sub-lists - left and right
+    Divide the unsorted list at midpoint into sub-lists.
+    Returns two sub-lists - left and right.
+    Over all takes O(log n) time.
+    With list slice operation, Over all takes O(k log n) time.
     """
     mid = len(lst) // 2
     left = lst[:mid]
@@ -31,8 +36,9 @@ def split(lst):
 
 def merge(left, right):
     """
-    Merges two lists (arrays), sorting them in the process
-    Returns a new merged list
+    Merges two lists (arrays), sorting them in the process.
+    Returns a new merged list.
+    Runs in overall O(n) time.
     """
     lt = []
     i = 0
