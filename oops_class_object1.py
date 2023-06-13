@@ -15,7 +15,7 @@ print(person1.display_info())
 person2 = Person('Erica', 27)
 print(person2.display_info())
 
-# Update the property of class using object and call method with updated property
+# Update the property of a class using object and call the method with the updated property
 person2.name = 'Jenni'
 print(person2.display_info())
 

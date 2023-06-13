@@ -6,10 +6,12 @@ class Person:
         self.kwargs = kwargs
 
     def display_info(self):
-        return 'Hello, your name is {} and you have holidays on {} and your details are {}'.format(self.name, self.param, self.kwargs)
+        return 'Hello, your name is {} and you have holidays on {} and your details are {}'.format(self.name,
+                                                                                                   self.param,
+                                                                                                   self.kwargs)
 
 
-# Create Object for Class and Call method
+# Create Object for a Class and Call the method
 person1 = Person()
 print(person1.display_info())
 
