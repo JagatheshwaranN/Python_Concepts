@@ -25,7 +25,7 @@ def merge_sort(ld_lst):
 def split(ld_lst):
     """
     Divide the unsorted list at midpoint into the sub linked lists
-    Takes O(k long n) time
+    Takes O(k log n) time
     """
     if ld_lst is None or ld_lst.head is None:
         left_half = ld_lst
