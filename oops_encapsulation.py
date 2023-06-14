@@ -4,7 +4,7 @@ class Person:
         self.name = name
         self.age = age  # Public Variable
         self._city = _city  # Protected Variable
-        self.__stay = __stay  # private Variable
+        self.__stay = __stay  # Private Variable
 
     def display_info(self):
         self.__private_method()
