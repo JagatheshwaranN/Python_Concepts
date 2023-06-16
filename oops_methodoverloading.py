@@ -12,5 +12,6 @@ class MethodOverloading:
 
 
 mo = MethodOverloading()
-mo.sum(10, 20)  # TypeError: sum() missing 1 required positional argument: 'num3'
+# mo.sum(10, 20)  # TypeError: sum() missing 1 required positional argument: 'num3'
+mo.sum(10, 20)
 mo.sum(10, 20, 30)
