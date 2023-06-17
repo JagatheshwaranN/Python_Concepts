@@ -21,5 +21,5 @@ def merge_sort(lst):
         return sorted_list
 
 
-alist = [50, 23, 67, 87, 72, 94, 17, 33, 42]
+alist = [8, 10, 5, 4, 1, 2, 70]
 print(merge_sort(alist))

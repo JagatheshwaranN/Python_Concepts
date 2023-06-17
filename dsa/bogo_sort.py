@@ -1,3 +1,4 @@
+# Bogo Sort is the worst case runtime sorting algorithm
 import random
 
 

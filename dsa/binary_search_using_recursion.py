@@ -8,8 +8,10 @@ def recursive_binary_search(lst, target):
             return True
         else:
             if lst[midpoint] < target:
+                # Here, the original list will get converted into sub-list.
                 return recursive_binary_search(lst[midpoint+1:], target)
             else:
+                # Here, the original list will get converted into sub-list.
                 return recursive_binary_search(lst[:midpoint], target)
 
 
