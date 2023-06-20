@@ -5,9 +5,14 @@ import cx_Oracle
 connection = cx_Oracle.connect(user="JAGA",
                                password="ALLOWME",
                                dsn="localhost/XEPDB1")
-print(connection)
-statement = connection.cursor()
-result_set = statement.execute('Select * from Employee')
+try:
+    print(connection)
+    statement = connection.cursor()
+    result_set = statement.execute('Select * from Employee')
+    for record in result_set:
+        print(record)
+except Exception as ex:
+    print(ex)
+finally:
+    connection.close()
 
-for record in result_set:
-    print(record)
