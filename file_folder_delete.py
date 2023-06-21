@@ -1,7 +1,7 @@
 import os
 import shutil
 
-folder_name = input('Enter the folder name \n')
+folder_name = input('Enter the folder name\n')
 try:
     if os.path.exists(folder_name):
         shutil.rmtree(folder_name)

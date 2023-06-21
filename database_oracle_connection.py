@@ -1,4 +1,4 @@
-import oracle_connection
+# import oracle_connection
 import cx_Oracle
 
 # db = oracle_connection.ConnectOracle('localhost','XEPDB1', 'JAGA', 'ALLOWME')
@@ -15,4 +15,3 @@ except Exception as ex:
     print(ex)
 finally:
     connection.close()
-
