@@ -1,10 +1,10 @@
 # In Python, we have 3 types of variables as below,
-# 1.	Instance Methods
-# 2.	Class Methods
-# 3.	Static Methods
+# 1.	Instance Variables (Object level variables)
+# 2.	Static Variables (Class level variables)
+# 3.	Local Variables (Method level variables)
 
 # Reference variable can be used to refer the objects. By using reference variable, we can invoke
-# functionality of the object. For a single object,  there may be a chance of multiple references.
+# functionality of the object. For a single object, there may be a chance of multiple references.
 # For any class, we can take any number of objects (one to many)
 # For any object, we can take any number of reference variables (one to many)
 
