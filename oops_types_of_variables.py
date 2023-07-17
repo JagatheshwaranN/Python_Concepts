@@ -17,21 +17,42 @@
 # 4.	We can declare the Instance variable inside Instance Method using self.
 # 5.	We can declare the Instance variable outside of Class by using object reference.
 
+# How to access the Instance Variable?
+# ====================================
+# 1.	Within the class by using self.
+# 2.	Outside the class using the object reference.
+
+# How to delete the Instance Variable?
+# ====================================
+# 1.	Within the class, using del self.VariableName
+# 2.	Outside the class, using del ObjectReference.VariableName
+# 3.	Deletion of Instance variable is varied from object to object.
+
+
 class Instance:
 
     def __init__(self):
         self.x1 = 10
         print("X1 :", self.x1)
+        self.x2 = 20
+        del self.x2
+        self.x6 = 60
 
     def instance_variable_demo(self):
-        self.x2 = 20
-        print("X2 :", self.x2)
+        self.x3 = 30  # Accessing instance variable using self
+        print("X3 :", self.x3)
 
 
-instance = Instance()
-instance.instance_variable_demo()
-instance.x3 = 30
-print("X3 :", instance.x3)
+instance1 = Instance()
+instance1.instance_variable_demo()
+instance1.x4 = 40  # Accessing instance variable using object reference
+instance1.x5 = 50  # Accessing instance variable using object reference
+del instance1.x5
+print("X4 :", instance1.x4)
+# print("X5 :", instance1.x5)  # AttributeError: 'Instance' object has no attribute 'x5'
+del instance1.x6
+instance2 = Instance()
+print("X6 :", instance2.x6)
 
 
 # Static Variables
@@ -45,6 +66,17 @@ print("X3 :", instance.x3)
 # 4.	We can also declare the static variable inside Constructor using Class Name,
 #       inside Instance Method using Class Name, inside the Class Method using Class Name
 #       & cls reference, and inside the Static Method using Class Name.
+
+# How to access the Static Variable?
+# ==================================
+# 1.	We can access the static variable using the Self, ClassName, Cls, and
+#       Object reference.
+
+# How to modify(update) the value of Static variable?
+# ===================================================
+# We can update the value of static variable either by ClassName or by Cls variable.
+# We can’t use the Self or Object reference to modify the static variable.
+
 
 class Static:
     y2 = 10
