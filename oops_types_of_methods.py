@@ -17,3 +17,46 @@
 #       variables.
 # 7.	In python, if we want to access the class level variables, then we should use cls reference.
 # 8.	We have to use @classmethod decorator to inform PVM that the method is class method.
+
+# Method Usage Tricks
+# ===================
+# 1.	Instance variable + Class variable + Local variable => Instance Method
+# 2.	Static variable + Local variable => Class Method
+# 3.	Local Variable => Static Method
+
+class Test:
+    @classmethod
+    def method1(cls):
+        print(id(cls))
+        print(id(Test))
+
+
+Test.method1()
+
+
+class Student:
+    collegeName = 'ABC College'
+    principal = "John"
+
+    def __init__(self, name, rollno):
+        self.name = name
+        self.rollno = rollno
+
+    def get_student_info(self):
+        print('Student Name   :', self.name)
+        print('Student Roll   :', self.rollno)
+
+    @classmethod
+    def get_college_info(cls):
+        print("College Name   :", cls.collegeName)
+        print("Principal Name :", cls.principal)
+
+    @staticmethod
+    def get_student_mark_avg(m1, m2, m3):
+        return (m1 + m2 + m3) / 3
+
+
+student = Student('Alex', 101)
+student.get_college_info()
+student.get_student_info()
+print("Student Mark   :", student.get_student_mark_avg(98, 97, 99))
