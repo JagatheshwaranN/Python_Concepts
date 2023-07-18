@@ -4,6 +4,7 @@
 # 3.	Static Method (General utility method)
 
 # Points about Methods
+# ====================
 # 1.	If we are accessing the instance variable ( whether using the static and local variables
 #       or not.)
 # 2.	The first argument to the instance method should be self.

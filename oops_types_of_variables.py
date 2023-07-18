@@ -14,8 +14,8 @@
 #       is called as Instance Variables.
 # 2.	For every object a separate copy will be created.
 # 3.	In general, we can define instance variables inside Constructor using Self object.
-# 4.	We can declare the Instance variable inside Instance Method using self.
-# 5.	We can declare the Instance variable outside of Class by using object reference.
+# 4.	We can declare the Instance variable inside the Instance Method using self.
+# 5.	Also, can declare the Instance variable outside of Class by using object reference.
 
 # How to access the Instance Variable?
 # ====================================
@@ -83,7 +83,8 @@ class Static:
 
     def __init__(self):
         Static.y1 = 20
-        print("Y1 :", Static.y2)
+        print("Y1 :", Static.y1)
+        Static.y2 = 100
 
     def static_variable_demo(self):
         Static.y3 = 30
@@ -92,14 +93,19 @@ class Static:
     @classmethod
     def class_method_demo(cls):
         cls.y4 = 40
-        print("Y4 :", cls.y4)
         Static.y5 = 50
         print("Y5 :", Static.y5)
+        cls.y4 = 200
+        print("Y4 :", cls.y4)
+        del cls.y4
+        # print("Y4 :", cls.y4) # AttributeError: type object 'Static' has no attribute 'y4'
 
     @staticmethod
     def static_method_demo():
         Static.y6 = 60
         print("Y6 :", Static.y6)
+        Static.y8 = 80
+        del Static.y8
 
 
 static = Static()
