@@ -13,3 +13,24 @@ print(type(age))
 # To convert age from String to Int
 age = int(age)
 print(type(age))
+
+# To read multiple values in single line
+a, b = [int(x) for x in input("Enter 2 numbers").split()]
+print("a :", a)
+print("b :", b)
+print("Sum :", a + b)
+
+c, d = [float(x) for x in input("Enter 2 numbers").split(',')]
+print("c :", c)
+print("d :", d)
+print("Sum :", c + d)
+
+# Eval - This function is going to take the expression as input and print the result.
+# It is used to convert the given data / input into the internal type automatically.
+
+expression = input("Enter the expression")
+result = eval(expression)
+print(result)
+
+input_data = eval(input("Enter the value"))
+print(type(input_data))
