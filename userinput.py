@@ -34,3 +34,10 @@ print(result)
 
 input_data = eval(input("Enter the value"))
 print(type(input_data))
+
+# Eval function is used to take multiple values of different data types.
+
+e, f, g = [eval(x) for x in input("Enter 3 values").split(',')]
+print("e :", e)
+print("f :", f)
+print("g :", g)
