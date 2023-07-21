@@ -118,3 +118,11 @@ print(text4)
 text5 = 'Hi {name}, your salary is {salary}'
 text5 = text5.format(salary=s9, name=s8)
 print(text5)
+
+text6 = 'Python'+'Program'
+print(text6)
+
+text7 = 'Python','Program'
+print(text7)
+
+print('Python','Program')

@@ -41,3 +41,18 @@ e, f, g = [eval(x) for x in input("Enter 3 values").split(',')]
 print("e :", e)
 print("f :", f)
 print("g :", g)
+
+# print() with variable number of arguments
+print(e, f, g, sep=',')
+
+# print() the number of lines in single line using end attribute.
+print('Hello', end=' ')
+print('Good morning')
+
+# print() with formatted string
+a, b = 10, 20
+print("The value of a is %i" % a)
+print("The value of a and b is %i and %i" % (a, b))
+lst = [10, 20, 30]
+var = 'python'
+print("The values are %s and %s" % (var, lst))
