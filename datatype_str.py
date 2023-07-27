@@ -126,3 +126,16 @@ text7 = 'Python','Program'
 print(text7)
 
 print('Python','Program')
+
+# String - Count Substrings in the given String
+text8 = 'Python Program'
+print(text8.count('Prog'))
+
+text9 = 'Python Program in Programming'
+print(text9.count('Prog', 11, len(text9)))
+
+# Pending Items
+# find()
+# index()
+# rfind()
+# rindex()
