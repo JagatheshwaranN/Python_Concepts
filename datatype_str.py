@@ -81,8 +81,17 @@ s3 = 'python'.upper()
 print(s3)
 
 # String LowerCase
-s4 = 'PYTHON'.lower()
+s4 = 'PYTHON LEARNING'.lower()
 print(s4)
+
+# String SwapCase
+print(s4.swapcase())
+
+# String Title
+print(s4.title())
+
+# String Capitalize
+print(s4.capitalize())
 
 # String Strip
 s5 = ' Hello world '
@@ -91,6 +100,10 @@ print(s5.strip())
 # String Replace
 s6 = 'Happy growing'
 print(s6.replace('growing', 'learning'))
+
+# String Startswith
+print(s6.startswith('Happy'))
+print(s6.endswith('growing'))
 
 # String Split
 s7 = 'Hello, World'
@@ -133,6 +146,26 @@ print(text8.count('Prog'))
 
 text9 = 'Python Program in Programming'
 print(text9.count('Prog', 11, len(text9)))
+
+# String - split
+text10 = "Learning Python is fun"
+print(text10.split())
+for item in text10.split():
+    print(item)
+
+text11 = "Learning Python is fun"
+print(text11.split(' ', 2))
+
+# Reverse Split
+print(text11.rsplit(' ', 2))
+
+# String - Join
+text12 = ['Learning', 'Python']
+print('-'.join(text12))
+
+text13 = ('Learning', 'Python')
+print(':'.join(text13))
+
 
 # Pending Items
 # find()
