@@ -197,3 +197,32 @@ lst10 = [6, 7, 8]
 lst11 = lst9 + lst10
 print(lst11)
 
+# List Comparison
+# Object1 == Object2
+# 1. The number of elements must be equal
+# 2. The order should be same
+# 3. The contents should be same (including case)
+
+lst21 = ['dog', 'cat']
+lst22 = ['dog', 'cat']
+lst23 = ['DOG', 'CAT']
+print(lst21 == lst22)
+print(lst22 == lst23)
+print(lst21 != lst23)
+
+# Object1 is Object2
+# The id(address) of lst21 and lst22 are different
+print(lst21 is lst22)  # False
+
+# Difference is vs ==
+# 1. Is operator checks for address comparison
+# 2. == operator checks for content comparison
+
+print(lst21[0] is lst22[0])  # True - String comparison, Immutable objects and reused
+
+lst24 = [50, 100, 300]
+lst25 = [40, 90, 200]
+lst26 = [50, 90, 200]
+print(lst24 > lst25)
+print(lst24 >= lst26)
+print(lst25 > lst26)
