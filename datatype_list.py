@@ -123,6 +123,12 @@ lst5.clear()
 print(lst5)
 
 # List Comprehension
+# list = [expression for x in sequence]
+lst = [x * x for x in range(1, 21)]
+
+# list = [expression for x in sequence if condition]
+lst2 = [x for x in lst if x % 2 == 0]
+
 fruits = ['Apple', 'Mango', 'Grapes', 'Kiwi', 'Orange']
 
 # Generate SubList without using List Comprehension
