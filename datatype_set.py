@@ -103,7 +103,9 @@ fruits.clear()
 s1 = {10, 30, 40, 100, 50, 70}
 s2 = {20, 40, 50, 70, 90, 80}
 s3 = s1.union(s2)
+s4 = (s1 | s2)
 print(s3)
+print(s4)
 
 print("====================================")
 
@@ -121,8 +123,19 @@ print("====================================")
 s1 = {10, 30, 40, 100, 50, 70}
 s2 = {20, 40, 50, 70, 90, 80}
 s6 = s1.intersection(s2)
-
+s7 = (s1 & s2)
 print(s6)
+print(s7)
+
+print("====================================")
+
+# Set - Difference
+s1 = {10, 30, 40, 100, 50, 70}
+s2 = {20, 40, 50, 70, 90, 80}
+s6 = s1.difference(s2)
+s7 = (s1 - s2)
+print(s6)
+print(s7)
 
 print("====================================")
 
@@ -140,8 +153,9 @@ print("====================================")
 s1 = {10, 30, 40, 100, 50, 70}
 s2 = {20, 40, 50, 70, 90, 80}
 s7 = s1.symmetric_difference(s2)
-
+s8 = (s1 ^ s2)
 print(s7)
+print(s8)
 
 print("====================================")
 
@@ -200,9 +214,26 @@ s13 = {1, 2}
 print(s12.issuperset(s13))
 print(s13.issubset(s12))
 
+print("====================================")
 
+# Set - Operations
+s14 = {10, 20}
+l1 = [30, 40]
+s14.update(l1, range(1, 3), 'python')
+print(s14)
 
+s15 = {10, 20}
+s15.add('python')
+print(s15)
 
+# If we have specified element then remove else discard the element.
+s16 = {10, 20}
+s16.discard(20)
+s16.discard(30)
+print(s16)
 
+print("====================================")
 
-
+# Set Comprehension
+s17 = {x * x for x in range(1, 6)}
+print(s17)
