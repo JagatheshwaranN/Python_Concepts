@@ -110,3 +110,24 @@ print(employees2)
 # To Iterate the Nested Dict
 for key, value in employees2.items():
     print(key, ' : ', value)
+
+# Dictionary Creation Approaches
+d1 = dict({100: 'john'})
+print(d1)
+
+# d = dict(list or set or tuple of tuples)
+d2 = dict([(100, 'alex')])
+print(d2)
+
+d3 = dict(((100, 'alex'), (101, 'john')))
+print(d3)
+
+d4 = dict({(100, 'alex'), (101, 'john')})
+print(d4)
+
+# d5 = dict({[100, 'alex'], [101, 'john']}) - Not Allowed
+
+# Default Value Set and Get
+d3 = dict(((100, 'alex'), (101, 'john')))
+print(d3.get(500))  # Key is not available so returning None
+print(d3.get(500, 'Default'))  # Key is not available But setting and getting Default value
