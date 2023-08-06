@@ -131,3 +131,12 @@ print(d4)
 d3 = dict(((100, 'alex'), (101, 'john')))
 print(d3.get(500))  # Key is not available so returning None
 print(d3.get(500, 'Default'))  # Key is not available But setting and getting Default value
+
+# Set Default - It will add to dict if the specified key value pair not available
+d1 = dict({100: 'john', 101: 'alex'})
+d1.setdefault(101, 'erick')
+print(d1)
+
+# Dictionary Comprehension
+squares = {x: x*x for x in range(1, 6)}
+print(squares)
