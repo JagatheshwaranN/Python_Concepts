@@ -81,3 +81,40 @@ print(func_wt_return_val('John', 29))
 # Function with Pass Statement.
 def func_wt_no_content():
     pass
+
+
+# Nested Functions
+def outer():
+    print("Outer Function")
+
+    def inner():
+        print("Inner Function")
+
+    print("Outer Function return Inner Function")
+    return inner
+
+
+f1 = outer()  # It's a function call
+f1()
+f2 = outer  # Here, For outer function we are giving another name
+
+
+# Function Decorator
+
+def decorator(func):
+    def inner(name):
+        if name == 'Alex':
+            print("Hello", name, "Good Evening")
+        else:
+            func(name)
+
+    return inner
+
+
+@decorator
+def wish(name):
+    print("Hello", name, "Good Morning")
+
+
+wish('John')
+wish('Alex')
