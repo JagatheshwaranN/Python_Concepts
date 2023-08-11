@@ -84,6 +84,8 @@ def func_wt_no_content():
 
 
 # Nested Functions
+# A function can be written inside a function. A function can return another function.
+
 def outer():
     print("Outer Function")
 
@@ -100,6 +102,10 @@ f2 = outer  # Here, For outer function we are giving another name
 
 
 # Function Decorator
+# Function Decorators can take some input function and return some output function
+# with extra added capabilities.
+# For an existing functionality, if we want to add some extra functionality, then
+# we should use Decorators concept.
 
 def decorator(func):
     def inner(name):
@@ -118,3 +124,21 @@ def wish(name):
 
 wish('John')
 wish('Alex')
+
+
+def smart_division(func):
+    def inner(a, b):
+        if b == 0:
+            print("Dear User, We can't divide a number by zero")
+        else:
+            return func(a, b)
+    return inner
+
+
+@smart_division
+def division(a, b):
+    return a / b
+
+
+print(division(10, 5))
+print(division(10, 0))
