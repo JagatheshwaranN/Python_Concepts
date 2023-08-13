@@ -1,6 +1,7 @@
 # In python, a function is a block of code which only runs when it called.
 # Function can accept arguments and also return values.
 # It is created using def keyword.
+from random import *
 
 
 # Create & Call Function.
@@ -132,6 +133,7 @@ def smart_division(func):
             print("Dear User, We can't divide a number by zero")
         else:
             return func(a, b)
+
     return inner
 
 
@@ -142,3 +144,15 @@ def division(a, b):
 
 print(division(10, 5))
 print(division(10, 0))
+
+
+# Random functions
+print(random())
+print(randint(1, 5))
+print(uniform(1, 5))
+print(randrange(1, 10, 2))
+
+lst = ["John", "Alex", "Eric", "Jenni"]
+for i in range(5):
+    print(choice(lst))
+
