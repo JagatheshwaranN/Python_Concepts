@@ -71,3 +71,24 @@ else:
     print('You are eligible to vote')
 
 print("====================================")
+
+try:
+    print("Try block")
+except ArithmeticError:
+    print("Except block")
+else:
+    print("Else block")
+finally:
+    print("Finally block")
+
+print("====================================")
+
+try:
+    print("Try block")
+    print(10/0)
+except ArithmeticError:
+    print("Except block")
+else:
+    print("Else block")
+finally:
+    print("Finally block")
