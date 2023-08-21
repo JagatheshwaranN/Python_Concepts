@@ -1,0 +1,22 @@
+WARNING:root:Warning Message
+ERROR:root:Error Message
+CRITICAL:root:Critical Message
+WARNING:root:Warning Message
+ERROR:root:Error Message
+CRITICAL:root:Critical Message
+WARNING:root:Warning Message
+ERROR:root:Error Message
+CRITICAL:root:Critical Message
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "D:\Environment_Collection\Python_Env\Workspace\PythonConcepts\log_demo.py", line 29, in <module>
+    print(x/y)
+ZeroDivisionError: division by zero
+WARNING:root:Warning Message
+ERROR:root:Error Message
+CRITICAL:root:Critical Message
+ERROR:root:invalid literal for int() with base 10: 'two'
+Traceback (most recent call last):
+  File "D:\Environment_Collection\Python_Env\Workspace\PythonConcepts\log_demo.py", line 28, in <module>
+    y = int(input("Enter second number:"))
+ValueError: invalid literal for int() with base 10: 'two'
