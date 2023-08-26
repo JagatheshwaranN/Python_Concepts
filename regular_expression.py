@@ -35,3 +35,11 @@ for match in matcher:
     print('Start:{}, End:{}, Group:{}'.format(match.start(), match.end(), match.group()))
 print('Number of occurrences of Match is : ', count)
 
+
+data = input('Enter the string to check the pattern \n')
+matcher = re.match(data, 'because')
+if matcher is not None:
+    print('Match is available at the beginning')
+    print('Start:{}, End:{}'.format(matcher.start(), matcher.end()))
+else:
+    print('Match is available at the beginning')
