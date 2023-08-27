@@ -1,4 +1,5 @@
 import re
+
 # Regular Expression
 # If we want to represent the group of strings according to a particular pattern.
 # Then we should go for Regular Expression.
@@ -35,7 +36,9 @@ for match in matcher:
     print('Start:{}, End:{}, Group:{}'.format(match.start(), match.end(), match.group()))
 print('Number of occurrences of Match is : ', count)
 
-
+# match
+# We can use this function to check the given pattern at beginning of the target string.
+# If match found, then return the match object otherwise none.
 data = input('Enter the string to check the pattern \n')
 matcher = re.match(data, 'because')
 if matcher is not None:
@@ -43,3 +46,30 @@ if matcher is not None:
     print('Start:{}, End:{}'.format(matcher.start(), matcher.end()))
 else:
     print('Match is available at the beginning')
+
+# full match
+# We can use this function to check the given pattern fully matches the target string.
+# If full match found, then return the match object otherwise none.
+data = input('Enter the string to check the pattern \n')
+matcher = re.fullmatch(data, 'because')
+if matcher is not None:
+    print('Full String Match is available')
+    print('Start:{}, End:{}'.format(matcher.start(), matcher.end()))
+else:
+    print('Full String Match is available')
+
+# search
+# We can use this function to check the given pattern match the first occurrence.
+# If full match found, then return the search object otherwise none.
+data = input('Enter the string to check the pattern \n')
+matcher = re.search(data, 'No sentence starts with because because because is conjunction')
+if matcher is not None:
+    print('Match is available')
+    print('First occurrence with Start:{} and End:{}'.format(matcher.start(), matcher.end()))
+else:
+    print('Match is not available')
+
+# findAll
+# We can use this function to find all the pattern match.
+lst = re.findall('[0-9]', 'a7b9k6z')
+print(lst)
