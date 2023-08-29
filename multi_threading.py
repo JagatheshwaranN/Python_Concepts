@@ -4,6 +4,7 @@ from threading import *
 print(threading.current_thread().getName())
 
 
+# Create Thread without using any class
 def display():
     print("The display function is executed by Thread :", current_thread().getName() + "\n")
 
@@ -26,7 +27,7 @@ for i in range(10):
     print("Main Thread")
 
 
-# Create Thread without using any class
+# Create thread without extending the thread class
 class MyThread1:
     def show(self):
         for j in range(10):
