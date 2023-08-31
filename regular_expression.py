@@ -73,3 +73,42 @@ else:
 # We can use this function to find all the pattern match.
 lst = re.findall('[0-9]', 'a7b9k6z')
 print(lst)
+
+# sub
+# We can use this function to perform substitution or replacement.
+value = re.sub('\\d', '#', 'a7b9k6z')
+print(value)
+
+# sub
+# We can use this function to perform substitution or replacement and also to get the number
+# of substitutions.
+tup = re.subn('\\d', '#', 'a7b9k6z')
+print(tup[0])
+print(tup[1])
+
+# split
+# We can use this function to split the given value with the delimiter.
+lst = re.split('-', '10-20-30-40-50')
+print(lst)
+lst = re.split('\\.', 'www.python.org')
+print(lst)
+lst = re.split('[.]', 'www.python.org')
+print(lst)
+
+# ^ symbol
+# We can use this function to check whether the target string starts with our provided pattern or not.
+data = 'Learning python is very easy'
+result = re.search("^Learn", data)
+if result is not None:
+    print('Target string starts with Learn')
+else:
+    print('Target string NOT starts with Learn')
+
+# $ symbol
+# We can use this function to check whether the target string ends with our provided pattern or not.
+data = 'Learning python is very easy'
+result = re.search('Easy$', data, re.IGNORECASE)
+if result is not None:
+    print('Target string ends with Easy')
+else:
+    print('Target string NOT ends with Easy')
