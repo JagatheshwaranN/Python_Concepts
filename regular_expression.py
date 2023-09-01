@@ -112,3 +112,13 @@ if result is not None:
     print('Target string ends with Easy')
 else:
     print('Target string NOT ends with Easy')
+
+
+# Regex for Mobile Number
+# [6789][0-9]{9} => [6-9]//d{9}
+data = input('Enter mobile number : \n')
+result = re.fullmatch('[6-9]\\d{9}', data)
+if result is not None:
+    print(data, ' mobile number is valid')
+else:
+    print(data, ' mobile number is not valid')
