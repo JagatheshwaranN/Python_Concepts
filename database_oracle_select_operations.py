@@ -38,7 +38,10 @@ try:
     records = result_set.fetchmany(2)
     for record in records:
         print(record)
-except Exception as ex:
-    print(ex)
+except cx_Oracle.DatabaseError as ex:
+    if connection:
+        connection.rollback()
+        print(ex)
 finally:
-    connection.close()
+    if connection:
+        connection.close()
