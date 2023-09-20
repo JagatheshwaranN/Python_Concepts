@@ -6,9 +6,11 @@ try:
     statement = connection.cursor()
     result_set = statement.execute('Select * from Employee')
     records = result_set.fetchall()
+    file = open('select_results.txt', 'w')
     for record in records:
         print(record)
-except Exception as ex:
+        file.write(str(record)+'\n')
+except cx_Oracle.DatabaseError as ex:
     print(ex)
 finally:
     connection.close()
@@ -23,7 +25,7 @@ try:
     records = result_set.fetchone()
     for record in records:
         print(record)
-except Exception as ex:
+except cx_Oracle.DatabaseError as ex:
     print(ex)
 finally:
     connection.close()
